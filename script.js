@@ -6,6 +6,7 @@ let arr = [ pete, john, mary ];
 
 function sortByAge(users){
     let ages = users.map(item => item.age);
+    ages.sort(function(a,b){return a - b;});
     return ages;
 }
 alert(sortByAge(arr));
