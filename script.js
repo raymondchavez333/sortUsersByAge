@@ -12,8 +12,8 @@ function sortByAge(users){
     let second = users.find(item => item.age == sortedAges[1]);
     let third = users.find(item => item.age == sortedAges[2]);
 
-    array = [first, second, third];
-    return array;
+    arr = [first, second, third];
+    return arr;
 }
 
 sortByAge(arr);
