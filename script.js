@@ -9,8 +9,8 @@ function sortByAge(users){
     ages.sort(function(a,b){return a - b;});
 
     let first = users.find(item => item.age == ages[0]);
-    let second = users.find(item => item.age == ages[0]);
-    let third = users.find(item => item.age == ages[0]);
+    let second = users.find(item => item.age == ages[1]);
+    let third = users.find(item => item.age == ages[2]);
 
     let sortedArray = {};
     return ages;
