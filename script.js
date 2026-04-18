@@ -7,6 +7,12 @@ let arr = [ pete, john, mary ];
 function sortByAge(users){
     let ages = users.map(item => item.age);
     ages.sort(function(a,b){return a - b;});
+
+    let first = users.find(item => item.age == ages[0]);
+    let second = users.find(item => item.age == ages[0]);
+    let third = users.find(item => item.age == ages[0]);
+
+    let sortedArray = {};
     return ages;
 }
 alert(sortByAge(arr));
