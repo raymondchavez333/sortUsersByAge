@@ -5,10 +5,10 @@ let mary = { name: "Mary", age: 28 };
 let arr = [ pete, john, mary ];
 
 function sortByAge(users){
-    
-    return 
+    let ages = users.map(item => item.age);
+    return ages;
 }
-sortByAge(arr);
+alert(sortByAge(arr));
 
 // now: [john, mary, pete]
 alert(arr[0].name); // John
