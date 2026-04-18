@@ -6,16 +6,17 @@ let arr = [ pete, john, mary ];
 
 function sortByAge(users){
     let ages = users.map(item => item.age);
-    ages.sort(function(a,b){return a - b;});
+    let sortedAges = ages.sort(function(a,b){return a - b;});
 
-    let first = users.find(item => item.age == ages[0]);
-    let second = users.find(item => item.age == ages[1]);
-    let third = users.find(item => item.age == ages[2]);
+    let first = users.find(item => item.age == sortedAges[0]);
+    let second = users.find(item => item.age == sortedAges[1]);
+    let third = users.find(item => item.age == sortedAges[2]);
 
-    let sortedArray = {};
-    return ages;
+    array = [first, second, third];
+    return array;
 }
-alert(sortByAge(arr));
+
+sortByAge(arr);
 
 // now: [john, mary, pete]
 alert(arr[0].name); // John
